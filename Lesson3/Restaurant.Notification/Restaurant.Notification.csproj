@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>dotnet-Restaurant.Notification-0188D862-E6C6-4292-A63B-DACD44A99CBE</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+		<PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Messaging\Messaging.csproj" />
+    </ItemGroup>
+
+    <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="https://ffizer.github.io/ffizer/ffizer.schema.json" /></VisualStudio></ProjectExtensions>
+</Project>
